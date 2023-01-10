@@ -29,9 +29,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     body {
     font-family : "Raleway";
     max-width : 1400px;
-    margin-left : 55px;
-    margin-top : 44px;
-    margin-right:50px;
+    margin-left : 3%;
+    margin-top : 3%;
+    margin-right:3%;
     }
     a {
     text-decoration : none;
@@ -51,6 +51,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
 
     /* --------------------------------------- */
+    
+  
+
     #header__nav {
     display : flex;
     flex-direction : row;
@@ -67,28 +70,29 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #header__nav ul {
     display : flex;
     flex-direction : row;
-    flex-wrap : wrap;
+    
     justify-content : flex-end;
     align-items : stretch;
     align-content : stretch;
-    margin-right : 10px;
-    margin-left : 10px;
-    }
-    #header__nav a:hover {
-    border-top : 2px solid #0065fc;
-    position:relative;
-    bottom:41px;
     
     }
-    .nav__links {
-    display : flex;
-    align-items : stretch;
-    align-content : stretch;
+    nav a:hover {
+        border-top: 2px solid #0065fc;
+        padding-top: 42px;
+        
+        
     }
+    .nav{
+        padding-left: 25px;
+        padding-right: 25px;
+        
+    }
+
+    
     #header__nav li {
-    margin-right : 40px;
-    box-sizing: border-box;
-    block-size: auto;
+    
+    
+    
     
     }
 /* ----------------------------------------- */
@@ -166,6 +170,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #header__filter {
     display : flex;
     flex-direction : row;
+    flex-wrap: wrap;
     align-items : center;
     margin-bottom : 20px;
     margin-top : 20px;
@@ -173,6 +178,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     .filter__choice {
     display : flex;
     flex-direction : row;
+    
     justify-content : flex-start;
     align-content : flex-start;
     }
@@ -184,6 +190,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     #header__filter li {
     margin-right : 35px;
+    margin-top: 10px;
     }
     #header__filter h3 {
     
@@ -371,19 +378,26 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     span.star1 {
     color : #0065fc;
+    font-size: 12px;
     }
     span.star2 {
     color : #0065fc;
+    font-size: 12px;
     }
     span.star3 {
     color : #0065fc;
+    font-size: 12px;
     }
     span.star4 {
     color : #0065fc;
+    font-size: 12px;
     }
     span.star5 {
     color : #f2f2f2;
+    font-size: 12px;
     }
+    
+    
     h2 {
     font-weight : bold;
     margin-top : 4%;
@@ -408,6 +422,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     flex-direction : row;
     flex-wrap : nowrap;
     justify-content : space-between;
+    
     }
     .activity__places {
     width : 302px;
@@ -466,11 +481,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* ----------------------------------------- */ 
 
 
-    @media screen and (max-width: 1279px) {
+    @media screen and (max-width: 992px) {
     body {
-        margin-left: 72px;
-        margin-right:72px;
+       
+        
     }
+    #header__filter li {
+        margin-right : 20px;
+        
+        }
     #harboring {
     display : flex;
     flex-direction : column;
@@ -479,7 +498,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #harboring__mostpopular {
     margin-top : 53px;
     margin-left : 0;
-    max-width : 880px;
+    max-width : 100%;
     
     }
     #mostpopular__flex {
@@ -545,9 +564,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* ----------------------------------------- */
 
 
-    @media screen and (max-width: 576px) {
-    body{
-   
+    @media screen and (max-width: 768px) {
+    body {
+        background-color: aquamarine;
+        margin:20px;
     }
     #header__title1 {
         max-width: 298px;
@@ -556,8 +576,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #header__logo{
     margin-bottom: 48px;    
     }
+    nav a:hover {
+        border-top: 3px solid #0065fc;
+        padding-top: none;
         
-    
+        
+    }
+    .nav{
+        padding-left: 25%;
+        padding-right: 25%;    
+    }
     #harboring__marseille__lodging article,
     #activity article{
     margin-top: 12px;
@@ -589,18 +617,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     #header__filter {
     display : flex;
-    flex-direction : column;
-    align-items : flex-start;
+    flex-direction : row;
+    flex-wrap: wrap;
+    
     }
     #header__filter h3 {
-    margin-left : 20px;
+    
     font-weight : bold;
     }
-    .filter__choice {
-    display : flex;
-    flex-direction : row;
-    justify-content : flex-start;
-    align-content : flex-start;
+    .filter__choice ul{
+    }
+    .filter__choice i{
+        font-size: 18px;
     }
     #header__filter ul {
     display : flex;
@@ -608,13 +636,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     flex-wrap : wrap;
     }
     #header__filter li {
-    margin-right : -5px;
+    margin-right: 14px;
     margin-top : 17px;
     }
     #header__filter button {
     font-size : 0.7em;
-    width : 120px;
+    width : 160px;
+    height: 50px;
     }
+    
     #harboring {
     display : flex;
     flex-direction : column-reverse;

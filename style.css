@@ -31,6 +31,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     max-width : 1400px;
     margin-left : 55px;
     margin-top : 44px;
+    margin-right:50px;
     }
     a {
     text-decoration : none;
@@ -75,6 +76,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     #header__nav a:hover {
     border-top : 2px solid #0065fc;
+    position:relative;
+    bottom:41px;
+    
     }
     .nav__links {
     display : flex;
@@ -83,6 +87,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     #header__nav li {
     margin-right : 40px;
+    box-sizing: border-box;
+    block-size: auto;
+    
     }
 /* ----------------------------------------- */
 
@@ -98,7 +105,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
 /* ----------------------------------------- */   
     #header__search {
-    max-width : 100%;
+    max-width : 418px;
     max-height : 49px;
     }
     #header__search form {
@@ -110,15 +117,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size : 1.125em;
     }
     #header__search--icon {
-    width : 50px;
-    height : 49px;
+    min-width : 50px;
+    min-height : 49px;
     background-color : #f2f2f2;
     border-top-left-radius : 15px;
     border-bottom-left-radius : 15px;
+    text-align: center;
     }
     #header__search--icon i {
-    padding-left : 20px;
-    padding-top : 10px;
+    
+    padding-top : 13px;
+    font-size: 18px;
     }
     #header__search--search input {
     color : black;
@@ -133,7 +142,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family : "Raleway";
     }
     #header__search--submit input {
-    font-size : 1.125em;
+    
     font-weight : bold;
     color : white;
     background : #0065fc;
@@ -171,13 +180,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display : flex;
     flex-direction : row;
     font-weight : bold;
-    list-style-type : none;
+    
     }
     #header__filter li {
     margin-right : 35px;
     }
     #header__filter h3 {
-    margin-left : 62px;
+    
     font-weight : bold;
     font-size : 1.125em;
     }
@@ -199,11 +208,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* ----------------------------------------- */    
     #header__info {
     display : flex;
-    flex-direction : row;
-    flex-wrap : nowrap;
-    justify-content : flex-start;
-    align-items : flex-start;
-    align-content : flex-start;
     padding-bottom : 39px;
     }
     #header__info h3 {
@@ -219,7 +223,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-align : center;
     }
     span.info {
-    margin-bottom : 5px;
+    padding-top: 5px;
     }
 
 
@@ -237,6 +241,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     #harboring--title {
     margin-left : 41px;
+    margin-top: 42px;
     font-size : 22px;
     font-weight : bold;
     }
@@ -316,6 +321,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display : flex;
     flex-direction : row;
     justify-content : space-between;
+    align-items: center;
     margin-left : 37px;
     margin-right : 42px;
     margin-top : 41px;
@@ -332,17 +338,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display : flex;
     flex-direction : column;
     flex-wrap : wrap;
+    
     width : 343px;
     height : 144px;
     background-color : white;
     border-radius : 20px;
     margin-bottom : 33px;
+    
     box-shadow : 0.5px 0.5px 5px grey;
     }
     .mostpopular--title {
     padding-top : 16px;
     font-weight : bold;
-    max-width : 150px;
+    max-width :178px;
+   
     }
     .mostpopular--price {
     padding-top : 7px;
@@ -350,7 +359,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     .mostpopular__lodging img {
     object-fit : cover;
     max-width : 126px;
-    height : 135px;
+    height : 134px;
     border-top-left-radius : 20px;
     border-bottom-left-radius : 20px;
     border : 5px;
@@ -400,23 +409,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     flex-wrap : nowrap;
     justify-content : space-between;
     }
-    .activity__lieux {
+    .activity__places {
     width : 302px;
     height : 444px;
     border-radius : 20px;
     box-shadow : 0.5px 0.5px 5px grey;
     }
-    .activity__lieux img {
+    .activity__places img {
     width : 302px;
     height : 389px;
     object-fit : cover;
     border-top-left-radius : 20px;
     border-top-right-radius : 20px;
     }
-    .activity__lieux--title {
+    .activity__places--title {
     margin : 19px;
     }
-    .activity__lieux--title h4 {
+    .activity__places--title h4 {
     font-weight : bold;
     }
 
@@ -457,16 +466,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* ----------------------------------------- */ 
 
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1279px) {
+    body {
+        margin-left: 72px;
+        margin-right:72px;
+    }
     #harboring {
     display : flex;
     flex-direction : column;
+    flex-wrap: wrap;
     }
     #harboring__mostpopular {
     margin-top : 53px;
     margin-left : 0;
-    max-width : 883px;
-    max-height : 278px;
+    max-width : 880px;
+    
     }
     #mostpopular__flex {
     display : flex;
@@ -478,17 +492,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     flex-direction : row;
     flex-wrap : wrap;
     justify-content : space-between;
+    align-items: center;
     }
     .mostpopular__lodging {
     display : flex;
     flex-direction : column;
     flex-wrap : wrap;
+    
     width : 252px;
     height : 144px;
     }
     .mostpopular--title {
     padding-top : 16px;
     font-weight : bold;
+    max-width :150px;
     }
     .mostpopular--price {
     padding-top : 7px;
@@ -505,14 +522,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     .mostpopular--star {
     margin-top : auto;
     margin-bottom : 12px;
+    
     }
-    .activity__lieux {
+    .activity__places {
     width : 182px;
     height : 267px;
     margin-right : 50px;
     border-radius : 20px;
     }
-    .activity__lieux img {
+    .activity__places img {
     width : 182px;
     height : 211px;
     object-fit : cover;
@@ -527,7 +545,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* ----------------------------------------- */
 
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 576px) {
+    body{
+   
+    }
+    #header__title1 {
+        max-width: 298px;
+        margin-bottom: 13px;
+    }
+    #header__logo{
+    margin-bottom: 48px;    
+    }
+        
+    
+    #harboring__marseille__lodging article,
+    #activity article{
+    margin-top: 12px;
+    }    
+        
     #header__nav {
     display : flex;
     flex-direction : column;
@@ -609,6 +644,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     flex-direction : column;
     flex-wrap : wrap;
     width : 334px;
+    
+    }
+    .mostpopular__lodging img {
+        object-fit : cover;
+        max-width : 137px;
+        height : 135px;
     }
     #harboring--title {
     width : 334px;
@@ -665,22 +706,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     height : auto;
     margin : auto;
     }
-    .activity__lieux {
+    .activity__places {
     width : 334px;
     height : auto;
     margin : 0;
     }
-    .activity__lieux img {
+    .activity__places img {
     width : 334px;
     height : 134px;
     object-fit : cover;
     border-top-left-radius : 20px;
     border-top-right-radius : 20px;
     }
-    .activity__lieux--title {
+    .activity__places--title {
     width : 212px;
     }
-    .activity__lieux--title h4 {
+    .activity__places--title h4 {
     font-weight : bold;
     }
     FOOTER {

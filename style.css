@@ -329,6 +329,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display : flex;
     flex-direction : row;
     justify-content : space-between;
+    block-size: 22px;
     align-items: center;
     margin-left : 37px;
     margin-right : 42px;
@@ -342,6 +343,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     span.graph {
     color : #0065fc;
     font-size: 18px;
+    
     }
     .mostpopular__lodging {
     display : flex;
@@ -453,14 +455,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     
 
     FOOTER {
-    display : flex;
+    
+    width: 100%;
+    background : grey;
+
+    }
+    #footer__nav{
+        display : flex;
     flex-direction : row;
+    
     justify-content : space-around;
     align-items : flex-start;
     align-content : flex-start;
     margin-top : 45px;
-    height : auto;
-    background : grey;
+    width: 83%;
+    background : rgb(179, 30, 30); 
     }
       
     footer li {
@@ -759,12 +768,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-weight : bold;
     }
     FOOTER {
-    display : flex;
-    flex-direction : column;
-    justify-content : flex-start;
-    align-content : center;
-    width : 377px;
-    margin : auto;
+    
+    }
+    #footer__nav{
+        display : flex;
+        flex-direction : column;
+        justify-content : flex-start;
+        align-content : center;
+        width : 377px;
+        margin : auto;
     }
     #footer__about, 
     #footer__harboring,

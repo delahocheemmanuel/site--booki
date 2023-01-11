@@ -29,9 +29,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     body {
     font-family : "Raleway";
     max-width : 1400px;
-    margin-left : 50px;
+    margin-left : 30px;
     margin-top : 44px;
-    margin-right:50px;
+    margin-right:30px;
     }
     a {
     text-decoration : none;
@@ -57,8 +57,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #header__nav {
     display : flex;
     flex-direction : row;
+    
     justify-content : space-between;
     align-items : center;
+    margin-right: 50px;
     }
     #header__nav img {
     width : 61.09px;
@@ -72,13 +74,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     flex-direction : row;
     
     justify-content : flex-end;
-    align-items : stretch;
-    align-content : stretch;
+    
     
     }
     nav a:hover {
         border-top: 2px solid #0065fc;
-        padding-top: 38px;
+        padding-top: 42px;
         
         
     }
@@ -170,7 +171,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #header__filter {
     display : flex;
     flex-direction : row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items : center;
     margin-bottom : 20px;
     margin-top : 20px;
@@ -178,7 +179,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     .filter__choice {
     display : flex;
     flex-direction : row;
-    
     justify-content : flex-start;
     align-content : flex-start;
     }
@@ -278,6 +278,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     align-content : space-around;
     width : 880px;
     height : 500px;
+    margin-top: 10px;
     }
     .harboring__lodging {
     display : flex;
@@ -323,17 +324,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
     #harboring__mostpopular {
-    margin-left : 31px;
+    margin-left : 40px;
     background-color : grey;
     border-radius : 20px;
+    width: 420px;
     }
     #mostpopular__flex {
-    display : flex;
-    flex-direction : row;
-    flex-wrap : wrap;
-    justify-content : space-around;
-    align-items : stretch;
-    align-content : space-between;
+    display : grid;
+    margin-left: 37px;
+    
     }
     #mostpopular--title-icon {
     display : flex;
@@ -388,7 +387,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     height : 134px;
     border-top-left-radius : 20px;
     border-bottom-left-radius : 20px;
-    border : 5px;
     margin : 5px;
     }
     .mostpopular--star {
@@ -432,16 +430,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #activity {
     display : flex;
     flex-direction : column;
+    max-width: 1350px;
     }
     #activity--title-mobile {
     display : none;
     }
     #activity__marseille {
-    display : flex;
-    flex-direction : row;
-    flex-wrap : nowrap;
-    justify-content : space-between;
-    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
     }
     .activity__places {
     width : 302px;
@@ -471,14 +469,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
     FOOTER {
     
-    width: 100%;
+    
     background : grey;
-
+    
+    max-width: 1350px;
     }
     #footer__nav{
-        display : flex;
+    display : flex;
     flex-direction : row;
-    
     justify-content : space-between;
     align-items : flex-start;
     align-content : flex-start;
@@ -489,7 +487,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
       
     footer li {
-        margin-bottom:12px;
+    margin-bottom:12px;
     }
     
     footer h3 {
@@ -512,9 +510,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
     @media screen and (max-width: 992px) {
     body {
-        
-        margin-left : 72px;
-        margin-right:72px;   
+        /* si marge 72 en 1024 .992-880=112/2=56 */
+        margin-left : 56px;
+        margin-right:56px;   
         
     }
     #header__filter li {
@@ -529,13 +527,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #harboring__mostpopular {
     margin-top : 53px;
     margin-left : 0;
-    max-width : 100%;
+    width :883px;
     
     }
     #mostpopular__flex {
     display : flex;
-    flex-direction : row-reverse;
+    flex-direction : row;
     flex-wrap : nowrap;
+    justify-content: space-evenly;
+    margin-left: 0px;
     }
     #mostpopular--title-icon {
     display : flex;
@@ -574,6 +574,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin-bottom : 12px;
     
     }
+    #activity__marseille{
+    
+    }
     .activity__places {
     width : 182px;
     height : 267px;
@@ -587,6 +590,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-top-left-radius : 20px;
     border-top-right-radius : 20px;
     }
+    footer{
+        width: 880px;
+    }
     }
 
 
@@ -598,7 +604,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     @media screen and (max-width: 768px) {
     body {
         background-color: aquamarine;
-        margin:20px;
+        margin-left:22px;
+        margin-right: 22px;
+        margin-top: 21px;
     }
     #header__title1 {
         max-width: 298px;
@@ -608,14 +616,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin-bottom: 48px;    
     }
     nav a:hover {
-        border-top: 3px solid #0065fc;
-        padding-top: none;
+        
         
         
     }
     .nav{
-        padding-left: 25%;
-        padding-right: 25%;    
+        
     }
     #harboring__marseille__lodging article,
     #activity article{
@@ -625,6 +631,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #header__nav {
     display : flex;
     flex-direction : column;
+    }
+    #header__nav li{
+        width: 100%;
+    justify-content: space-around;    
     }
     #header__search {
     max-width : 100%;

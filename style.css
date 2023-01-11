@@ -29,9 +29,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     body {
     font-family : "Raleway";
     max-width : 1400px;
-    margin-left : 3%;
-    margin-top : 3%;
-    margin-right:3%;
+    margin-left : 50px;
+    margin-top : 44px;
+    margin-right:50px;
     }
     a {
     text-decoration : none;
@@ -215,7 +215,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* ----------------------------------------- */    
     #header__info {
     display : flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
     padding-bottom : 39px;
+    font-size: 16px;
+    block-size: 24px;
+    
     }
     #header__info h3 {
     margin-top : 0.5em;
@@ -223,15 +230,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     .info {
     border-radius : 50%;
-    min-width : 24px;
+    font-size: 10px;
+    width : 24px;
     height : 24px;
     border : #d9d9d9 solid 2px;
     color : #0065fc;
-    text-align : center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    box-sizing: border-box;
     }
-    span.info {
-    padding-top: 5px;
-    }
+    
 
 
 /* ----------------------------------------- */
@@ -464,11 +474,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         display : flex;
     flex-direction : row;
     
-    justify-content : space-around;
+    justify-content : space-between;
     align-items : flex-start;
     align-content : flex-start;
     margin-top : 45px;
-    width: 83%;
+    margin-left:70px;
+    width: 70%;
     background : rgb(179, 30, 30); 
     }
       
@@ -496,7 +507,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
     @media screen and (max-width: 992px) {
     body {
-       
+        
+        margin-left : 72px;
+        margin-right:72px;   
         
     }
     #header__filter li {

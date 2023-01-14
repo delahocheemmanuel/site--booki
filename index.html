@@ -14,22 +14,14 @@
 
     <body>
         <header>
-            <nav id="header__nav" >
+            <section id="header__nav" >
                 <img src="images/logo/Booki.png" id="header__logo"  alt="logo-Booki">
-                <h1 id="header__title" >booki</h1>
-                <!-- booki en display none h1 pour référencement -->
-                    
-                        <ul>
-                            <li>
-                                <a href="#harboring" class="nav" >Hébergements</a>
-                            </li>
-                            <li>
-                                <a href="#activity" class="nav" >Activités</a>
-                            </li>
-                        </ul>
-                    
-                </nav>   
-               
+                <h1 id="header__title" >booki</h1> <!-- booki en display none h1 pour référencement -->
+                    <nav id="nav__links" >
+                    <a href="#harboring" class="nav"alt=Hébergements>Hébergements</a>
+                    <a href="#activity" class="nav" >Activités</a>   
+                    </nav>   
+            </section>   
             <!-- ---------------------------------------- -->
             <h1 id="header__title1" >Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2 id="header__title2" >En plein centre-ville ou en pleine nature</h2>
@@ -52,29 +44,20 @@
             <!-- ----------------------------------------- -->
                 <section id="header__filter">
                     <h3>Filtres</h3>
-                    
-                        <ul class="filter__choice">
-                            <li>
-                                <button class="header__economic" type="button">
-                                    <i class="fa-solid fa-money-bill-wave"></i> Économique
-                                </button>
-                            </li>
-                            <li>
-                                <button class="header__family" type="button">
+                        <div class="filter__choice">
+                            <button class="choice--filter" type="button">
+                                <i class="fa-solid fa-money-bill-wave"></i> Économique
+                            </button>
+                            <button class="choice--filter" type="button">
                                     <i class="fa-solid fa-person"></i> Familial
-                                </button>
-                            </li>
-                            <li>        
-                                <button class="header__romantic" type="button">
-                                    <i class="fa-solid fa-heart"></i> Romantique
-                                </button>
-                            </li>
-                            <li>            
-                                <button class="header__pets-allowed" type="button">
-                                    <i class="fa-sharp fa-solid fa-dog"></i> Animaux autorisés
-                                </button>
-                            </li>        
-                        </ul>
+                            </button>
+                            <button class="choice--filter" type="button">
+                                <i class="fa-solid fa-heart"></i> Romantique
+                            </button>
+                            <button class="choice--filter" type="button">
+                                <i class="fa-sharp fa-solid fa-dog"></i> Animaux autorisés
+                            </button>            
+                        </div>
                     
                 </section>
                 <section id="header__info" >
@@ -341,7 +324,7 @@
                             images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1400w" 
                             sizes="302vw">
                         <div class="activity__places--title" >
-                            <h4> Vieux-Port                                          </h4>
+                            <h4> Vieux-Port </h4>
                         </div>
                 </article>   
              <!--------------------------------  -->

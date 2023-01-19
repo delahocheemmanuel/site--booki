@@ -233,7 +233,7 @@ form input {
 #header__search--icon {
     min-width: 50px;
     min-height: 49px;
-    background-color: grey;
+    background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     text-align: center;
@@ -358,9 +358,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: grey;
+    background-color: #F2F2F2;
     border-radius: 20px;
-    width: 880px;
     max-height: 880px;
 }
 #harboring__marseille__lodging {
@@ -383,7 +382,7 @@ button:hover {
     padding: 5px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0.5px 0.5px 5px grey;
+    box-shadow: #D9D9D9 3px 3px 10px 2px;
 }
 .lodging img {
     object-fit: cover;
@@ -419,7 +418,7 @@ button:hover {
 
 #harboring__mostpopular {
     margin-left: 2%;
-    background-color: grey;
+    background-color: #F2F2F2;
     border-radius: 20px;
     width: 420px;
 }
@@ -427,6 +426,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
 }
 #mostpopular__title-icon {
     display: flex;
@@ -438,7 +439,7 @@ button:hover {
     margin-left: 37px;
     margin-right: 42px;
     margin-top: 20px;
-    margin-bottom: 60px;
+    
 }
 #mostpopular--title {
     font-weight: bold;
@@ -458,13 +459,13 @@ span.graph {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     
-    width: 246px;
-    height: 199px;
+    width: 343px;
+    height: 144px;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 33px;
     padding: 5px;
-    box-shadow: 0.5px 0.5px 5px grey;
+    box-shadow: #D9D9D9 3px 3px 10px 2px;
 }
 .mostpopular--title-price-star {
     display: grid;
@@ -479,8 +480,8 @@ span.graph {
 }
 .mostpopular__lodging img {
     object-fit: cover;
-    width: 123px;
-    height: 199px;
+    width: 137px;
+    height: 144px;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -506,7 +507,7 @@ span.star4 {
     font-size: 12px;
 }
 span.star5 {
-    color: grey;
+    color: #F2F2F2;
     font-size: 12px;
 }
 
@@ -534,17 +535,18 @@ span.star5 {
     display: flex;
     flex-direction: column;
     
+    height: 100%;
     max-width: 302px;
-    max-height: 444px;
+    
     border-radius: 20px;
-    box-shadow: 0.5px 0.5px 5px grey;
+    box-shadow: #D9D9D9 3px 3px 10px 2px;
 }
 .activity__places  {
     
 }
 .activity__places img {
     width: 100%;
-    height: 389px;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -561,7 +563,7 @@ span.star5 {
 /* ----------------------------------------- */
 
 FOOTER {
-    background: grey;
+    background: #F2F2F2;
     max-width: 1350px;
 }
 #footer__nav {
@@ -626,7 +628,7 @@ footer a {
         flex-direction: column;
         justify-content: flex-start;
         max-height: 450px;
-        margin-top: 53px;
+        margin-top: 40px;
         margin-left: 0;
         width: 100%;
     }
@@ -638,13 +640,14 @@ footer a {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin-top:10px;
         margin-left: 0px;
         
     }
     #mostpopular__title-icon {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap:wrap-reverse;
 
         align-items: center;
 
@@ -653,7 +656,7 @@ footer a {
     .mostpopular__lodging {
         width: 97%;
         height: 144px;
-        margin-right:20px;
+        
     }
     .mostpopular--title {
         padding-top: 16px;
@@ -683,7 +686,7 @@ footer a {
     .activity__places {
     }
     .activity__places img {
-        max-height: 231px;
+        max-height: 218px;
     }
     footer {
         max-width: 880px;
@@ -696,7 +699,7 @@ footer a {
 
 @media screen and (max-width: 768px) {
     body {
-        margin: 0 auto;
+        
         padding: 0px 0px 0px 0px;
     }
     #header__title1,
@@ -708,7 +711,7 @@ footer a {
     }
 
     main {
-        margin: 0 auto;
+       
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -797,7 +800,8 @@ footer a {
         height: auto;
         padding-bottom: 50px;
     }
-    #header__filter button {
+    #header__filter h3 {
+        padding-bottom: 20px;
     }
     .filter__choice {
         display: grid;

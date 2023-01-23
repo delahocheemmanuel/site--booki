@@ -140,10 +140,30 @@ a:hover {
 }
 h1 {
     font-weight: 700;
+    font-size: 22px;
 }
 h2 {
     font-size: 22px;
     font-weight: 400;
+}
+h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+h4{
+    font-size: 16px;
+    font-weight: 700;   
+}
+h5{
+    font-size: 16px;
+    font-weight: 400;    
+}
+p{
+    font-size: 14px;
+    font-weight: 400;   
+}
+b{
+    font-weight: 700;
 }
 
 /* --------------------------------------- */
@@ -292,9 +312,6 @@ form input {
     width: 100%;
 }
 #header__filter h3 {
-    font-weight: bold;
-    font-size: 1.125em;
-
     margin-right: 20px;
 }
 #header__filter button {
@@ -307,12 +324,13 @@ form input {
     background: white;
     border-color: #D9D9D9;
     border-style: solid;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
 }
 #header__filter button i {
     color: #0065fc;
+    margin-right: 10px;
 }
 #header__filter button:hover {
     background-color: #deebff;
@@ -324,15 +342,14 @@ form input {
     flex-direction: row;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     font-size: 16px;
     block-size: 24px;
 }
-#header__info h3 {
-    margin-top: 0.5em;
-    margin-left: 11px;
-    font-weight: 400;
+#header__info h5{
+    padding-left: 10px;
 }
+
 .info {
     border-radius: 50%;
     font-size: 10px;
@@ -433,7 +450,7 @@ form input {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
+    margin:100px 20px 0px 20px;
 }
 #mostpopular__title-icon {
     display: flex;
@@ -463,8 +480,8 @@ span.graph {
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-
-    width: 343px;
+    min-width: 300px;
+    max-width: 343px;
     height: 144px;
     background-color: white;
     border-radius: 20px;
@@ -526,6 +543,7 @@ span.star5 {
 }
 #activity--title {
     margin-bottom: 20px;
+    font-weight: 700;
 }
 #activity--title-mobile {
     display: none;
@@ -645,7 +663,7 @@ footer a {
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 10px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
     #mostpopular__title-icon {
         display: flex;
@@ -659,6 +677,7 @@ footer a {
     .mostpopular__lodging {
         width: 97%;
         height: 144px;
+        min-width: 252px;
     }
     .mostpopular--title {
         padding-top: 16px;
@@ -850,6 +869,9 @@ footer a {
         margin-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .mostpopular__lodging{
+        min-width: 100%;
     }
     .mostpopular__lodging img {
         object-fit: cover;

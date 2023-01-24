@@ -243,38 +243,37 @@ menu a:hover .blue-bar {
     flex-direction: row;
     height: 50px;
 }
-#header__search form {
-    display: flex;
-    flex-direction: row;
-}
+
 form input {
-    font-size: 1.125em;
-}
-#header__search--icon {
-    min-width: 50px;
-    min-height: 49px;
-    background-color: #f2f2f2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    text-align: center;
-}
-#header__search--icon i {
-    padding-top: 13px;
     font-size: 18px;
 }
-#header__search--search input {
+#search--icon {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 20px;
+}
+#search--search{
     border: solid 1px #F2F2F2;
     width:230px ;
-    height: 49px;
+    height: 50px;  
 }
-#header__search--search ::placeholder {
+#search--search input {
+    border: solid 1px #F2F2F2;
+    width:230px ;
+    height: 50px;
+}
+#search--search ::placeholder {
     padding-left: 10%;
     color: black;
-    font-size: 1.125em;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 700;
     font-family: 'Raleway';
 }
-#header__search--submit input {
+#search--submit input {
     font-weight: bold;
     color: white;
     background: #0065fc;
@@ -284,13 +283,13 @@ form input {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-#header__search--submit button {
+#search--submit button {
     display: none;
     color: white;
     background: #0065fc;
     border-color: #0065fc;
     width: 50px;
-    height: 49px;
+    height: 50px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -793,21 +792,18 @@ footer a {
     menu a:hover .blue-bar {
         background: #0065fc;
     }
-
-    #header__search {
-        width: 100%;
-        height: 50px;
+    #search--search{
+        width:100% ;   
     }
-    #header__search--search input {
+   
+    #search--search input {
         width: 100%;   
     } 
-    #header__search form{
-      width:100%;
-    }
-    #header__search--submit input {
+   
+    #search--submit input {
         display: none;
     }
-    #header__search--submit button {
+    #search--submit button {
         display: block;
     }
     #header__filter {

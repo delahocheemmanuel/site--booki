@@ -1,3 +1,6 @@
+/* ----------------------------------------- */
+/* ------------------RESET------------------ */
+/* ----------------------------------------- */
 html,
 body,
 div,
@@ -127,6 +130,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/* ----------------------------------------- */
+/* -----------------GÉNÉRAL----------------- */
+/* ----------------------------------------- */
 
 body {
     font-family: 'Raleway';
@@ -140,28 +146,31 @@ a {
     text-decoration: none;
     color: black;
 }
-
 h1 {
-    font-weight: 700;
     font-size: 22px;
+    font-weight: 700; 
+}
+h2 {
+    font-size: 22px;
+    font-weight: 700;   
 }
 
-h2 {
+h3 {
     font-size: 22px;
     font-weight: 400;
 }
 
-h3 {
+h4 {
     font-size: 18px;
     font-weight: 700;
 }
 
-h4 {
+h5 {
     font-size: 16px;
     font-weight: 700;
 }
 
-h5 {
+h6 {
     font-size: 16px;
     font-weight: 400;
 }
@@ -175,7 +184,9 @@ b {
     font-weight: 700;
 }
 
-/* --------------------------------------- */
+/* ----------------------------------------- */
+/* ------------------HEADER----------------- */
+/* ----------------------------------------- */
 
 #header__nav {
     display: flex;
@@ -239,6 +250,7 @@ menu a:hover .blue-bar {
 }
 
 /* ----------------------------------------- */
+/* ----------------------------------------- */
 
 #header__title1 {
     margin-top: 0px;
@@ -253,6 +265,7 @@ menu a:hover .blue-bar {
     margin-bottom: 25px;
 }
 
+/* ----------------------------------------- */
 /* ----------------------------------------- */
 
 #header__search {
@@ -320,6 +333,7 @@ form input {
 }
 
 /* ----------------------------------------- */
+/* ----------------------------------------- */
 
 #header__filter {
     display: flex;
@@ -339,16 +353,14 @@ form input {
     width: 100%;
 }
 
-#header__filter h3 {
+#header__filter h4 {
     margin-right: 20px;
 }
 
 #header__filter button {
     border-radius: 25px;
-
     width: 100%;
     height: 50px;
-
     background: white;
     border-color: #d9d9d9;
     border-style: solid;
@@ -367,6 +379,7 @@ form input {
 }
 
 /* ----------------------------------------- */
+/* ----------------------------------------- */
 
 #header__info {
     display: flex;
@@ -378,7 +391,7 @@ form input {
     block-size: 24px;
 }
 
-#header__info h5 {
+#header__info h6 {
     padding-left: 10px;
 }
 
@@ -424,10 +437,10 @@ form input {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
     align-content: space-evenly;
     width: 100%;
     min-height: 500px;
+    gap: 20px;
 }
 
 .lodging {
@@ -446,7 +459,6 @@ form input {
     object-fit: cover;
     width: 100%;
     height: 120px;
-
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -489,6 +501,7 @@ form input {
     align-items: center;
     justify-content: space-between;
     margin: 60px 20px 0px 20px;
+    gap: 20px;
 }
 
 #mostpopular__title-icon {
@@ -613,10 +626,8 @@ span.star5 {
 .activity__places {
     display: flex;
     flex-direction: column;
-
     height: 100%;
     max-width: 302px;
-
     border-radius: 20px;
     box-shadow: #d9d9d9 3px 3px 10px 2px;
 }
@@ -658,7 +669,7 @@ footer li {
     margin-bottom: 12px;
 }
 
-footer h3 {
+footer h4 {
     font-size: 18px;
     font-weight: bold;
     padding-top: 45px;
@@ -671,13 +682,19 @@ footer a {
 }
 
 /* ----------------------------------------- */
+/* ----------------------------------------- */
 /* ----------RESPONSIVE TABLETTE------------ */
+/* ----------------------------------------- */
 /* ----------------------------------------- */
 
 @media screen and (max-width: 992px) {
     body {
         padding: 40px 40px 0px 40px;
     }
+
+    /* ----------------------------------------- */
+    /* ------------------HEADER----------------- */
+    /* ----------------------------------------- */
 
     nav li {
         text-align: right;
@@ -692,11 +709,23 @@ footer a {
         margin-right: 20px;
     }
 
+    /* ----------------------------------------- */
+    /* ---------------HARBORING----------------- */
+    /* ----------------------------------------- */
+
     #harboring {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    #more {
+        padding-top: 10px;
+    }
+
+    /* ----------------------------------------- */
+    /* --------------MOSTPOPULAR---------------- */
+    /* ----------------------------------------- */
 
     #harboring__mostpopular {
         display: flex;
@@ -706,10 +735,6 @@ footer a {
         margin-top: 40px;
         margin-left: 0;
         width: 100%;
-    }
-
-    #more {
-        padding-top: 10px;
     }
 
     #mostpopular__flex {
@@ -761,7 +786,9 @@ footer a {
         margin-top: auto;
         margin-bottom: 12px;
     }
-
+    /* ----------------------------------------- */
+    /* -----------------ACTIVITE---------------- */
+    /* ----------------------------------------- */
     #activity {
         max-width: 992px;
     }
@@ -770,26 +797,23 @@ footer a {
         max-height: 218px;
     }
 
+    /* ----------------------------------------- */
+    /* ------------------FOOTER----------------- */
+    /* ----------------------------------------- */
+
     footer {
         max-width: 880px;
     }
 }
-
+/* ----------------------------------------- */
 /* ----------------------------------------- */
 /* -----------RESPONSIVE MOBILE------------- */
+/* ----------------------------------------- */
 /* ----------------------------------------- */
 
 @media screen and (max-width: 768px) {
     body {
         padding: 0px 0px 0px 0px;
-    }
-
-    #header__title1,
-    #header__title2,
-    #header__search,
-    #header__filter,
-    #header__info {
-        padding: 20px;
     }
 
     main {
@@ -798,14 +822,16 @@ footer a {
         justify-content: space-between;
         max-height: 3950px;
     }
+    /* ----------------------------------------- */
+    /* ------------------HEADER----------------- */
+    /* ----------------------------------------- */
 
-    #header__title1 {
-        margin-top: 56px;
-        margin-bottom: 13px;
-    }
-
-    #header__title2 {
-        padding-bottom: 36px;
+    #header__title1,
+    #header__title2,
+    #header__search,
+    #header__filter,
+    #header__info {
+        padding: 20px;
     }
 
     #header__nav {
@@ -858,6 +884,17 @@ footer a {
     menu a:hover .blue-bar {
         background: #0065fc;
     }
+    #header__title1 {
+        margin-top: 56px;
+        margin-bottom: 13px;
+    }
+
+    #header__title2 {
+        padding-bottom: 36px;
+    }
+
+    /* ----------------------------------------- */
+    /* ----------------------------------------- */
 
     #search--search {
         width: 100%;
@@ -874,6 +911,10 @@ footer a {
     #search--submit button {
         display: block;
     }
+
+    /* ----------------------------------------- */
+    /* ----------------------------------------- */
+
     #header__filter {
         display: flex;
         flex-direction: column;
@@ -883,7 +924,7 @@ footer a {
         padding-bottom: 50px;
     }
 
-    #header__filter h3 {
+    #header__filter h4 {
         padding-bottom: 20px;
     }
 
@@ -900,70 +941,22 @@ footer a {
         font-size: 18px;
     }
 
+    /* ----------------------------------------- */
+    /* ----------------------------------------- */
+
     #header__info {
         padding-top: 40px;
     }
 
+    /* ----------------------------------------- */
+    /* ---------------HARBORING----------------- */
+    /* ----------------------------------------- */
+
     #harboring {
         display: flex;
         flex-direction: column-reverse;
-
         max-height: 3950px;
         width: 100%;
-    }
-
-    #harboring__mostpopular {
-        width: 100%;
-        max-width: 880px;
-        margin-right: 0px;
-        margin-left: -5px;
-        margin-top: 10px;
-        max-height: 580px;
-        padding-bottom: 26px;
-        border-radius: 0px;
-    }
-
-    #mostpopular__flex {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        padding-top: 26px;
-        max-height: 500px;
-    }
-
-    #mostpopular__title-icon {
-        margin-left: 10px;
-        margin-right: 0px;
-        margin-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    #mostpopular--icon {
-        align-self: flex-start;
-    }
-
-    .mostpopular__lodging {
-        min-width: 100%;
-    }
-
-    .mostpopular__lodging img {
-        object-fit: cover;
-        max-width: 137px;
-        height: 144px;
-        width: 100%;
-        max-width: 450px;
-    }
-
-    .mostpopular--title-price-star {
-        max-width: 100%;
-    }
-
-    .mostpopular--title {
-        padding-top: 16px;
-        font-weight: bold;
-        max-width: 150px;
     }
 
     #harboring--title {
@@ -1004,6 +997,70 @@ footer a {
         display: none;
     }
 
+    /* ----------------------------------------- */
+    /* --------------MOSTPOPULAR---------------- */
+    /* ----------------------------------------- */
+
+    #harboring__mostpopular {
+        width: 100%;
+        max-width: 880px;
+        margin-right: 0px;
+        margin-left: -5px;
+        margin-top: 10px;
+        max-height: 600px;
+        padding-bottom: 26px;
+        border-radius: 0px;
+    }
+
+    #mostpopular__flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        padding-top: 26px;
+        max-height: 500px;
+        gap:0px;
+    }
+
+    #mostpopular__title-icon {
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 10px;
+        
+    }
+
+    #mostpopular--icon {
+        align-self: flex-start;
+    }
+
+    .mostpopular__lodging {
+        min-width: 100%;
+    }
+
+    .mostpopular__lodging img {
+        object-fit: cover;
+        max-width: 137px;
+        height: 144px;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .mostpopular--title-price-star {
+        max-width: 100%;
+    }
+
+    .mostpopular--title {
+        padding-top: 16px;
+        font-weight: bold;
+        max-width: 150px;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------------ACTIVITE---------------- */
+    /* ----------------------------------------- */
+
     #activity {
         display: flex;
         flex-direction: column;
@@ -1034,12 +1091,16 @@ footer a {
         max-height: 20px;
     }
 
-    .activity__places--title h4 {
+    .activity__places--title h5 {
         font-size: 16px;
         font-weight: bold;
         margin-left: 19px;
         margin-top: 15px;
     }
+
+    /* ----------------------------------------- */
+    /* ------------------FOOTER----------------- */
+    /* ----------------------------------------- */
 
     FOOTER {
         width: 100%;
@@ -1054,7 +1115,7 @@ footer a {
         width: 100%;
         margin: auto;
     }
-    
+
     #footer__about,
     #footer__harboring,
     #footer__assistance {

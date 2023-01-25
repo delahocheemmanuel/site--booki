@@ -121,7 +121,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
 body {
     font-family: 'Raleway';
     max-width: 1400px;
@@ -132,11 +132,6 @@ body {
 a {
     text-decoration: none;
     color: black;
-    font-weight:500 ;
-    font-size: 1em;
-}
-a:hover {
-    color: #0065fc;
 }
 h1 {
     font-weight: 700;
@@ -146,23 +141,23 @@ h2 {
     font-size: 22px;
     font-weight: 400;
 }
-h3{
+h3 {
     font-size: 18px;
     font-weight: 700;
 }
-h4{
+h4 {
     font-size: 16px;
-    font-weight: 700;   
+    font-weight: 700;
 }
-h5{
+h5 {
     font-size: 16px;
-    font-weight: 400;    
+    font-weight: 400;
 }
-p{
+p {
     font-size: 14px;
-    font-weight: 400;   
+    font-weight: 400;
 }
-b{
+b {
     font-weight: 700;
 }
 
@@ -173,7 +168,7 @@ b{
     flex-direction: row;
     justify-content: space-between;
     height: 80px;
-    width: 100
+    
 }
 #header__logo {
     width: 61px;
@@ -214,6 +209,8 @@ menu li {
 menu a {
     text-decoration: none;
     color: black;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 menu a:hover {
@@ -227,12 +224,12 @@ menu a:hover .blue-bar {
 /* ----------------------------------------- */
 
 #header__title1 {
-    margin-top: 31px;
+    margin-top: 0px;
     font-weight: 700;
     font-size: 22px;
 }
 #header__title2 {
-    margin-top: 8px;
+    margin-top: 0px;
     font-size: 16px;
     padding-top: 10px;
     margin-bottom: 25px;
@@ -252,18 +249,18 @@ form input {
     width: 50px;
     justify-content: center;
     align-items: center;
-    background: #F2F2F2;
+    background: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
     font-size: 20px;
 }
-#search--search{
-    border: solid 1px #F2F2F2;
-    width:230px ;
-    height: 50px;  
+#search--search {
+    border: solid 1px #f2f2f2;
+    width: 230px;
+    height: 50px;
 }
 #search--search input {
-    border: solid 1px #F2F2F2;
-    width:230px ;
+    border: solid 1px #f2f2f2;
+    width: 230px;
     height: 50px;
 }
 #search--search ::placeholder {
@@ -278,8 +275,9 @@ form input {
     color: white;
     background: #0065fc;
     border-color: #0065fc;
+    border-style: solid;
     width: 132px;
-    height: 49px;
+    height: 50px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -288,6 +286,7 @@ form input {
     color: white;
     background: #0065fc;
     border-color: #0065fc;
+    border-style: solid;
     width: 50px;
     height: 50px;
     border-top-right-radius: 15px;
@@ -314,14 +313,13 @@ form input {
     margin-right: 20px;
 }
 #header__filter button {
-    
     border-radius: 25px;
-    
+
     width: 100%;
     height: 50px;
-    
+
     background: white;
-    border-color: #D9D9D9;
+    border-color: #d9d9d9;
     border-style: solid;
     font-size: 17px;
     font-weight: 700;
@@ -345,7 +343,7 @@ form input {
     font-size: 16px;
     block-size: 24px;
 }
-#header__info h5{
+#header__info h5 {
     padding-left: 10px;
 }
 
@@ -369,8 +367,6 @@ form input {
 
 #harboring {
     display: flex;
-    
-    
 }
 #harboring--title {
     margin-left: 40px;
@@ -450,7 +446,7 @@ form input {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin:60px 20px 0px 20px;
+    margin: 60px 20px 0px 20px;
 }
 #mostpopular__title-icon {
     display: flex;
@@ -630,7 +626,6 @@ footer a {
     .blue-bar {
         display: none;
     }
-       
 
     #header__filter li {
         margin-right: 20px;
@@ -641,8 +636,6 @@ footer a {
         flex-wrap: wrap;
     }
     #harboring__marseille {
-        
-        
     }
     #harboring__marseille__lodging {
     }
@@ -673,7 +666,7 @@ footer a {
 
         align-items: center;
         margin-right: 25px;
-        margin-left:35px;
+        margin-left: 35px;
         margin-bottom: 30px;
     }
     .mostpopular__lodging {
@@ -729,7 +722,7 @@ footer a {
     #header__search,
     #header__filter,
     #header__info {
-        padding: 10px;
+        padding: 20px;
     }
 
     main {
@@ -792,14 +785,14 @@ footer a {
     menu a:hover .blue-bar {
         background: #0065fc;
     }
-    #search--search{
-        width:100% ;   
+    #search--search {
+        width: 100%;
     }
-   
+
     #search--search input {
-        width: 100%;   
-    } 
-   
+        width: 100%;
+    }
+
     #search--submit input {
         display: none;
     }
@@ -842,7 +835,7 @@ footer a {
         width: 100%;
         max-width: 880px;
         margin-right: 0px;
-        margin-left: 0px;
+        margin-left: -5px;
         margin-top: 10px;
         max-height: 580px;
         padding-bottom: 26px;
@@ -867,7 +860,7 @@ footer a {
     #mostpopular--icon {
         align-self: flex-start;
     }
-    .mostpopular__lodging{
+    .mostpopular__lodging {
         min-width: 100%;
     }
     .mostpopular__lodging img {
@@ -896,6 +889,7 @@ footer a {
         justify-content: space-around;
         max-height: 5000px;
         background-color: white;
+        padding-bottom: 100px;
     }
     #harboring__marseille__lodging {
         display: flex;

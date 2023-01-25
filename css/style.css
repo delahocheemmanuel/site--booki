@@ -86,6 +86,7 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -99,17 +100,21 @@ nav,
 section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol,
 ul {
     list-style: none;
 }
+
 blockquote,
 q {
     quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -117,6 +122,7 @@ q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -129,34 +135,42 @@ body {
     padding: 40px 40px 0px 40px;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 h1 {
     font-weight: 700;
     font-size: 22px;
 }
+
 h2 {
     font-size: 22px;
     font-weight: 400;
 }
+
 h3 {
     font-size: 18px;
     font-weight: 700;
 }
+
 h4 {
     font-size: 16px;
     font-weight: 700;
 }
+
 h5 {
     font-size: 16px;
     font-weight: 400;
 }
+
 p {
     font-size: 14px;
     font-weight: 400;
 }
+
 b {
     font-weight: 700;
 }
@@ -168,19 +182,22 @@ b {
     flex-direction: row;
     justify-content: space-between;
     height: 80px;
-    
 }
+
 #header__logo {
     width: 61px;
     height: 19px;
 }
+
 #header__title {
     display: none;
 }
+
 .nav__links {
     display: flex;
     flex-direction: row;
 }
+
 menu {
     display: flex;
     justify-content: space-between;
@@ -228,13 +245,16 @@ menu a:hover .blue-bar {
     font-weight: 700;
     font-size: 22px;
 }
+
 #header__title2 {
     margin-top: 0px;
     font-size: 16px;
     padding-top: 10px;
     margin-bottom: 25px;
 }
+
 /* ----------------------------------------- */
+
 #header__search {
     display: flex;
     flex-direction: row;
@@ -244,6 +264,7 @@ menu a:hover .blue-bar {
 form input {
     font-size: 18px;
 }
+
 #search--icon {
     display: flex;
     width: 50px;
@@ -253,16 +274,19 @@ form input {
     border-radius: 15px 0px 0px 15px;
     font-size: 20px;
 }
+
 #search--search {
     border: solid 1px #f2f2f2;
     width: 230px;
     height: 50px;
 }
+
 #search--search input {
     border: solid 1px #f2f2f2;
     width: 230px;
     height: 50px;
 }
+
 #search--search ::placeholder {
     padding-left: 10%;
     color: black;
@@ -270,6 +294,7 @@ form input {
     font-weight: 700;
     font-family: 'Raleway';
 }
+
 #search--submit input {
     font-weight: bold;
     color: white;
@@ -281,6 +306,7 @@ form input {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 #search--submit button {
     display: none;
     color: white;
@@ -292,7 +318,9 @@ form input {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 /* ----------------------------------------- */
+
 #header__filter {
     display: flex;
     flex-direction: row;
@@ -303,15 +331,18 @@ form input {
     margin: 30px 0px 30px 0px;
     max-height: 50px;
 }
+
 .filter__choice {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
     width: 100%;
 }
+
 #header__filter h3 {
     margin-right: 20px;
 }
+
 #header__filter button {
     border-radius: 25px;
 
@@ -325,15 +356,18 @@ form input {
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
 }
+
 #header__filter button i {
     color: #0065fc;
     margin-right: 10px;
 }
+
 #header__filter button:hover {
     background-color: #deebff;
 }
 
 /* ----------------------------------------- */
+
 #header__info {
     display: flex;
     flex-direction: row;
@@ -343,6 +377,7 @@ form input {
     font-size: 16px;
     block-size: 24px;
 }
+
 #header__info h5 {
     padding-left: 10px;
 }
@@ -368,11 +403,13 @@ form input {
 #harboring {
     display: flex;
 }
+
 #harboring--title {
     margin-left: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 #harboring__marseille {
     display: flex;
     flex-direction: column;
@@ -381,6 +418,7 @@ form input {
     border-radius: 20px;
     max-height: 880px;
 }
+
 #harboring__marseille__lodging {
     display: flex;
     flex-direction: row;
@@ -403,6 +441,7 @@ form input {
     border-radius: 20px;
     box-shadow: #d9d9d9 3px 3px 10px 2px;
 }
+
 .lodging img {
     object-fit: cover;
     width: 100%;
@@ -410,20 +449,22 @@ form input {
 
     border-radius: 15px 15px 0px 0px;
 }
-.lodging__name-price-star {
-}
+
 .lodging__name {
     font-weight: bold;
     font-size: 1em;
     margin-left: 1em;
 }
+
 .lodging__price {
     margin-left: 1em;
 }
+
 .lodging__star {
     margin-left: 1em;
     display: flex;
 }
+
 #more {
     padding-top: 20px;
     margin-left: 40px;
@@ -441,6 +482,7 @@ form input {
     border-radius: 20px;
     width: 420px;
 }
+
 #mostpopular__flex {
     display: flex;
     flex-direction: column;
@@ -448,6 +490,7 @@ form input {
     justify-content: space-between;
     margin: 60px 20px 0px 20px;
 }
+
 #mostpopular__title-icon {
     display: flex;
     flex-direction: row;
@@ -459,17 +502,21 @@ form input {
     margin-right: 20px;
     margin-top: 20px;
 }
+
 #mostpopular--title {
     font-weight: bold;
     font-size: 22px;
 }
+
 #mostpopular--icon {
     align-self: flex-end; /* aligne le bas de l'icône avec le bas du texte */
 }
+
 span.graph {
     color: #0065fc;
     font-size: 18px;
 }
+
 .mostpopular__lodging {
     display: grid;
     align-content: center;
@@ -485,17 +532,21 @@ span.graph {
     padding: 5px;
     box-shadow: #d9d9d9 3px 3px 10px 2px;
 }
+
 .mostpopular--title-price-star {
     display: grid;
 }
+
 .mostpopular--title {
     padding-top: 16px;
     font-weight: bold;
     max-width: 178px;
 }
+
 .mostpopular--price {
     padding-top: 7px;
 }
+
 .mostpopular__lodging img {
     object-fit: cover;
     width: 137px;
@@ -508,22 +559,27 @@ span.graph {
     margin-top: auto;
     margin-bottom: 12px;
 }
+
 span.star1 {
     color: #0065fc;
     font-size: 12px;
 }
+
 span.star2 {
     color: #0065fc;
     font-size: 12px;
 }
+
 span.star3 {
     color: #0065fc;
     font-size: 12px;
 }
+
 span.star4 {
     color: #0065fc;
     font-size: 12px;
 }
+
 span.star5 {
     color: #f2f2f2;
     font-size: 12px;
@@ -537,19 +593,23 @@ span.star5 {
     margin-top: 20px;
     max-width: 1350px;
 }
+
 #activity--title {
     margin-bottom: 20px;
     font-weight: 700;
 }
+
 #activity--title-mobile {
     display: none;
 }
+
 #activity__marseille {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 4%;
     width: 100%;
 }
+
 .activity__places {
     display: flex;
     flex-direction: column;
@@ -560,8 +620,7 @@ span.star5 {
     border-radius: 20px;
     box-shadow: #d9d9d9 3px 3px 10px 2px;
 }
-.activity__places {
-}
+
 .activity__places img {
     width: 100%;
     height: 100%;
@@ -569,6 +628,7 @@ span.star5 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .activity__places--title {
     margin-top: 10px;
     margin-left: 10px;
@@ -584,11 +644,11 @@ FOOTER {
     background: #f2f2f2;
     max-width: 1350px;
 }
+
 #footer__nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     margin-top: 45px;
     margin-left: 70px;
     width: 70%;
@@ -604,6 +664,7 @@ footer h3 {
     padding-top: 45px;
     margin-bottom: 20px;
 }
+
 footer a {
     font-size: 1em;
     line-height: 0.5em;
@@ -630,15 +691,13 @@ footer a {
     #header__filter li {
         margin-right: 20px;
     }
+
     #harboring {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    #harboring__marseille {
-    }
-    #harboring__marseille__lodging {
-    }
+
     #harboring__mostpopular {
         display: flex;
         flex-direction: column;
@@ -648,9 +707,11 @@ footer a {
         margin-left: 0;
         width: 100%;
     }
+
     #more {
         padding-top: 10px;
     }
+
     #mostpopular__flex {
         display: flex;
         flex-direction: row;
@@ -659,51 +720,56 @@ footer a {
         margin-top: 10px;
         margin-left: 20px;
     }
+
     #mostpopular__title-icon {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap-reverse;
-
         align-items: center;
         margin-right: 25px;
         margin-left: 35px;
         margin-bottom: 30px;
     }
+
     .mostpopular__lodging {
         width: 97%;
         height: 144px;
         min-width: 252px;
     }
+
     .mostpopular--title {
         padding-top: 16px;
         font-weight: bold;
         max-width: 150px;
     }
+
     .mostpopular--price {
         padding-top: 7px;
     }
+
     .mostpopular__lodging img {
         width: 106px;
         height: 144px;
     }
+
     .mostpopular--title-price-star {
         max-width: 100px;
         padding-left: 10px;
     }
+
     .mostpopular--star {
         margin-top: auto;
         margin-bottom: 12px;
     }
+
     #activity {
         max-width: 992px;
     }
-    #activity__marseille {
-    }
-    .activity__places {
-    }
+
     .activity__places img {
         max-height: 218px;
     }
+
     footer {
         max-width: 880px;
     }
@@ -717,6 +783,7 @@ footer a {
     body {
         padding: 0px 0px 0px 0px;
     }
+
     #header__title1,
     #header__title2,
     #header__search,
@@ -731,26 +798,32 @@ footer a {
         justify-content: space-between;
         max-height: 3950px;
     }
+
     #header__title1 {
         margin-top: 56px;
         margin-bottom: 13px;
     }
+
     #header__title2 {
         padding-bottom: 36px;
     }
+
     #header__nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 10px;
     }
+
     #header__logo {
         margin-bottom: 48px;
     }
+
     nav li {
         text-align: center;
         margin: 0;
     }
+
     nav {
         width: 100%;
         margin: 0;
@@ -785,6 +858,7 @@ footer a {
     menu a:hover .blue-bar {
         background: #0065fc;
     }
+
     #search--search {
         width: 100%;
     }
@@ -796,6 +870,7 @@ footer a {
     #search--submit input {
         display: none;
     }
+
     #search--submit button {
         display: block;
     }
@@ -807,9 +882,11 @@ footer a {
         height: auto;
         padding-bottom: 50px;
     }
+
     #header__filter h3 {
         padding-bottom: 20px;
     }
+
     .filter__choice {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -818,12 +895,15 @@ footer a {
         grid-row-gap: 17px;
         width: 100%;
     }
+
     .filter__choice i {
         font-size: 18px;
     }
+
     #header__info {
         padding-top: 40px;
     }
+
     #harboring {
         display: flex;
         flex-direction: column-reverse;
@@ -831,6 +911,7 @@ footer a {
         max-height: 3950px;
         width: 100%;
     }
+
     #harboring__mostpopular {
         width: 100%;
         max-width: 880px;
@@ -841,6 +922,7 @@ footer a {
         padding-bottom: 26px;
         border-radius: 0px;
     }
+
     #mostpopular__flex {
         display: flex;
         flex-direction: column;
@@ -857,12 +939,15 @@ footer a {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     #mostpopular--icon {
         align-self: flex-start;
     }
+
     .mostpopular__lodging {
         min-width: 100%;
     }
+
     .mostpopular__lodging img {
         object-fit: cover;
         max-width: 137px;
@@ -870,19 +955,23 @@ footer a {
         width: 100%;
         max-width: 450px;
     }
+
     .mostpopular--title-price-star {
         max-width: 100%;
     }
+
     .mostpopular--title {
         padding-top: 16px;
         font-weight: bold;
         max-width: 150px;
     }
+
     #harboring--title {
         margin-left: 10px;
         margin-bottom: 0px;
         padding-left: 10px;
     }
+
     #harboring__marseille {
         display: flex;
         flex-direction: column;
@@ -891,6 +980,7 @@ footer a {
         background-color: white;
         padding-bottom: 100px;
     }
+
     #harboring__marseille__lodging {
         display: flex;
         flex-direction: column;
@@ -900,13 +990,16 @@ footer a {
         padding: 10px;
         width: 95%;
     }
+
     .lodging {
         width: 100%;
         height: 199px;
     }
+
     .lodging img {
         width: 100%;
     }
+
     #more {
         display: none;
     }
@@ -918,34 +1011,41 @@ footer a {
         padding: 10px;
         margin-top: 0px;
     }
+
     #activity__marseille {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
+
     .activity__places {
         min-width: 100%;
         height: 190px;
         margin-bottom: 20px;
     }
+
     .activity__places img {
         width: 100%;
         height: 134px;
         object-fit: cover;
     }
+
     .activity__places--title {
         max-height: 20px;
     }
+
     .activity__places--title h4 {
         font-size: 16px;
         font-weight: bold;
         margin-left: 19px;
         margin-top: 15px;
     }
+
     FOOTER {
         width: 100%;
         margin: 0 auto;
     }
+
     #footer__nav {
         display: flex;
         flex-direction: column;
@@ -954,6 +1054,7 @@ footer a {
         width: 100%;
         margin: auto;
     }
+    
     #footer__about,
     #footer__harboring,
     #footer__assistance {

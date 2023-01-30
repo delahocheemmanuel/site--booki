@@ -138,7 +138,7 @@ body {
     font-family: 'Raleway';
     max-width: 1400px;
     margin: 0 auto;
-    padding: 40px 40px 0px 40px;
+    padding: 20px 40px 0px 20px;
     box-sizing: border-box;
 }
 
@@ -351,9 +351,8 @@ form input {
 }
 
 .filter__choice {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px;
+    display:flex;
+    gap: 20px;
     width: 100%;
 }
 
@@ -363,6 +362,7 @@ form input {
 
 #header__filter button {
     border-radius: 25px;
+    max-width: 226px;
     width: 100%;
     height: 50px;
     background: white;
@@ -422,7 +422,7 @@ form input {
 }
 
 #harboring--title {
-    margin-left: 40px;
+    margin-left: 30px;
     padding-top: 41px;
     padding-bottom: 23px;
 }
@@ -441,10 +441,9 @@ form input {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-between;
     width: 100%;
     min-height: 500px;
-    gap: 30px;
+    gap: 10px;
 }
 
 .lodging {
@@ -498,7 +497,7 @@ form input {
 
     align-content: stretch;
     justify-content: flex-start;
-    margin-left: 40px;
+    margin-left: 3%;
     background-color: #f2f2f2;
     border-radius: 20px;
     width: 30%;
@@ -508,9 +507,9 @@ form input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 3%;
+    margin-left: 3.5%;
     gap: 30px;
-    min-width: 100%;
+    width: 100%;
 }
 
 #mostpopular__title-icon {
@@ -543,8 +542,7 @@ span.graph {
 .mostpopular__lodging {
     display: grid;
     justify-content: center;
-
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
     grid-template-rows: repeat(3, 1fr);
     width: 90%;
     height: 144px;
@@ -645,7 +643,7 @@ span.star5 {
 }
 
 .activity__picture {
-    height: 437px;
+    height: 100%;
     
 
     
@@ -723,7 +721,9 @@ footer a {
     .blue-bar {
         display: none;
     }
-
+    .filter__choice {
+         grid-column-gap: 10px;
+    }
     #header__filter li {
         margin-right: 20px;
     }
@@ -753,26 +753,37 @@ footer a {
         width: 100%;
         min-height: 280px;
     }
-
-    #mostpopular__flex {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        margin-left: 1%;
-        gap: 1%;
-    }
-
     #mostpopular__title-icon {
         flex-wrap: wrap;
         margin-right: 25px;
         margin-left: 35px;
     }
+    #mostpopular__flex {
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        margin-left: 10;
+        gap: 5%;
+        max-width: 95%;
+    }
+
+    
+    .mostpopular__lodging {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: repeat(3, 1fr);
+        width: 90%;
+        height: 144px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: #d9d9d9 3px 3px 10px 2px;
+    }
     .mostpopular__lodging img {
         height: 144px;
         width: 100%;
     }
-    .mostpopular__lodging {
-    }
+    
 
     .mostpopular--title {
         padding-top: 16px;
@@ -799,10 +810,9 @@ footer a {
         max-width: 992px;
     }
     .activity__places {
-        display: flex;
-        flex-direction: column;
+        
         height: 267px;
-        max-width: 302px;
+        max-width: 182px;
     }
 
     .activity__picture {
@@ -821,6 +831,9 @@ footer a {
 
     footer {
         max-width: 880px;
+    }
+    #footer__nav{
+        width: 80%;
     }
 }
 /* ----------------------------------------- */
@@ -939,7 +952,10 @@ footer a {
 
         padding-bottom: 50px;
     }
-
+    #header__filter button {
+        border-radius: 25px;
+        max-width: 500px;
+    }
     #header__filter h4 {
         padding-bottom: 20px;
     }
@@ -992,12 +1008,12 @@ footer a {
         flex-wrap: nowrap;
         justify-content: space-around;
         min-height: 1400px;
-        padding: 10px;
+        padding: 0px 20px 0px 20px;
         width: 95%;
     }
 
     .lodging {
-        width: 100%;
+        width: 98%;
         height: 199px;
     }
 
@@ -1023,10 +1039,12 @@ footer a {
     }
 
     #mostpopular__flex {
+        display: flex;
         flex-direction: column;
-
         padding-top: 26px;
-
+        margin-left: 20px;
+        padding-right: 20px;
+        max-width: 97%;
         max-height: 500px;
         gap: 20px;
     }
@@ -1044,7 +1062,7 @@ footer a {
     }
 
     .mostpopular__lodging {
-        width: 95%;
+        width: 96%;
     }
 
     .mostpopular__lodging img {
@@ -1074,7 +1092,8 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px;
+        padding: 0px 20px 0px 20px;
+        
         margin-top: 0px;
     }
 
@@ -1118,10 +1137,8 @@ footer a {
     }
 
     #footer__nav {
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-content: center;
         width: 100%;
         margin: auto;
     }

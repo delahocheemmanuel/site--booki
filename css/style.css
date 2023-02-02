@@ -775,12 +775,18 @@ footer a {
     .mostpopular--title {
         padding-top: 12px;
         max-width: 150px;
+        
+    }
+    .mostpopular--title h5{
+       font-size: 14px;
     }
 
     .mostpopular--price {
         padding-top: 7px;
     }
-
+    .mostpopular--price p{
+      font-size: 13px;  
+    }
     .mostpopular--title-price-star {
         max-width: 150px;
     }

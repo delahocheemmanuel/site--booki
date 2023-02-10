@@ -150,12 +150,10 @@ a:hover {
     color: #0065fc;
 }
 
-
 h2 {
     font-size: 22px;
     font-weight: 700;
 }
-
 
 h4 {
     font-size: 18px;
@@ -184,7 +182,7 @@ b {
 /* ----------------------------------------- */
 /* ------------------HEADER----------------- */
 /* ----------------------------------------- */
-header{
+header {
     display: flex;
     flex-direction: column;
 }
@@ -195,20 +193,17 @@ header{
     padding: 0px 0px 60px 0px;
 }
 
-#header__logo img{
+#header__logo img {
     width: 61px;
     height: 19px;
 }
 
-
-
 .nav__links {
     display: flex;
-    flex-direction: row;
 }
 
 menu {
-    display: flex;
+    
     justify-content: space-between;
     margin-top: 0;
     list-style-type: none;
@@ -237,7 +232,6 @@ menu a {
     color: black;
     font-size: 16px;
     font-weight: 400;
-    
 }
 
 menu a:hover {
@@ -252,22 +246,21 @@ menu a:hover .blue-bar {
 /* ----------------------------------------- */
 
 #header__title1 {
-    margin-top: 0px;
-    font-weight: 700;
     font-size: 22px;
+    font-weight: 700;
+    
 }
 
 #header__title2 {
     font-size: 16px;
     font-weight: 400;
     padding: 30px 0px 30px 0px;
-    
 }
 
 /* ----------------------------------------- */
 /* ----------------------------------------- */
 
-#header__search form{
+#header__search form {
     display: flex;
     flex-direction: row;
     height: 51px;
@@ -289,7 +282,6 @@ form input {
 }
 /* min-height et min-width pour garder la taille en responsive mobile. */
 
-
 #search--search input {
     border: solid 1px #f2f2f2;
     width: 230px;
@@ -305,9 +297,9 @@ form input {
 }
 
 #search--submit input {
-    font-weight: bold;
+    font-weight: 700;
     color: white;
-    background: #0065fc;
+    background-color: #0065fc;
     border-color: #0065fc;
     border-style: solid;
     width: 132px;
@@ -319,7 +311,7 @@ form input {
 #search--submit button {
     display: none;
     color: white;
-    background: #0065fc;
+    background-color: #0065fc;
     border-color: #0065fc;
     border-style: solid;
     min-width: 50px;
@@ -340,8 +332,9 @@ form input {
 }
 
 .filter__choice {
-    display:flex;
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
     width: 100%;
 }
 
@@ -350,12 +343,12 @@ form input {
 }
 
 #header__filter button {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 25px;
-    max-width: 226px;
-    padding: 0px 5px 0px 5px;
+    max-width: 250px;
+    padding: 0px 30px 0px 30px;
     height: 50px;
     background: white;
     border-color: #d9d9d9;
@@ -363,7 +356,6 @@ form input {
     font-size: 17px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    
 }
 
 #header__filter button i {
@@ -381,10 +373,8 @@ form input {
 
 #header__info {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding: 20px 0px 40px 0px;
     font-size: 16px;
     block-size: 24px;
 }
@@ -404,7 +394,7 @@ form input {
     align-items: center;
     justify-content: center;
     line-height: 24px;
-    box-sizing: border-box; /* Permet de conserver la taille exacte des éléments malgré les padding et les bordures */
+    
 }
 
 /* ----------------------------------------- */
@@ -415,12 +405,10 @@ form input {
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    gap:3%;
 }
 
 #harboring--title {
-    
- 
     padding-bottom: 23px;
 }
 
@@ -431,16 +419,14 @@ form input {
     background-color: #f2f2f2;
     border-radius: 20px;
     max-width: 63%;
-    padding:40px 40px 40px 40px;
+    padding: 40px;
 }
 
 #harboring__marseille__lodging {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-around;
     width: 100%;
-   
     gap: 30px;
 }
 
@@ -480,10 +466,6 @@ form input {
 
 #more {
     padding-top: 20px;
-    
-    
-    
-    
 }
 
 /* ----------------------------------------- */
@@ -493,37 +475,28 @@ form input {
 #harboring__mostpopular {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    
     width: 30%;
-    padding: 40px 20px 0px 20px;
+    padding: 40px 20px 40px 20px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    
 }
 
 #mostpopular {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 33px;
     align-content: center;
-    min-width: 230px;  
+    min-width: 230px;
 }
 /* utilisation du grid pour garder les width des cards à la  meme taille  */
 
 #mostpopular__title-icon {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    
     align-items: center;
     min-width: 230px;
-    
-    
-    
     padding-bottom: 25px;
-    
 }
 
 #mostpopular--title {
@@ -532,7 +505,6 @@ form input {
 }
 
 #mostpopular--icon {
-    
     align-self: flex-end; /* aligne le bas de l'icône avec le bas du texte */
 }
 
@@ -544,12 +516,8 @@ span.graph {
 .mostpopular__lodging {
     display: grid;
     justify-content: center;
-    
-    
     grid-template-columns: 40% 60%;
     grid-template-rows: repeat(3, 1fr);
-    
-    
     height: 134px;
     background-color: white;
     border-radius: 20px;
@@ -560,7 +528,6 @@ span.graph {
 .mostpopular--title-price-star {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 10px;
     padding-left: 10px;
 }
@@ -587,6 +554,9 @@ span.graph {
     margin-top: auto;
     margin-bottom: 12px;
 }
+/* ----------------------------------------- */
+/* -----------------STARS------------------- */
+/* ----------------------------------------- */
 
 span.star1 {
     color: #0065fc;
@@ -648,9 +618,6 @@ span.star5 {
 
 .activity__picture {
     height: 100%;
-    
-
-    
 }
 .activity__picture img {
     height: 100%;
@@ -679,7 +646,6 @@ FOOTER {
 
 #footer__nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 45px;
     margin-left: 70px;
@@ -691,15 +657,13 @@ footer li {
 }
 
 footer h4 {
-    font-size: 18px;
-    font-weight: bold;
     padding-top: 45px;
     margin-bottom: 20px;
 }
 
 footer a {
-    font-size: 1em;
-    line-height: 0.5em;
+    font-size: 16px;
+    line-height: 8px;
 }
 
 /* ----------------------------------------- */
@@ -730,17 +694,19 @@ footer a {
         gap: 10px;
     }
     
-
+    #header__filter button{
+        padding: 0px 5px 0px 5px;
+    }
     /* ----------------------------------------- */
     /* ---------------HARBORING----------------- */
     /* ----------------------------------------- */
 
     #harboring {
         flex-direction: column;
-        
     }
     #harboring__marseille {
-        max-width: 100%
+        max-width: 100%;
+        padding:20px;
     }
     #more {
         padding-top: 40px;
@@ -753,13 +719,12 @@ footer a {
     #harboring__mostpopular {
         margin-top: 40px;
         margin-left: 0;
-        width: auto; 
-        padding: 40px 20px 40px 20px;
+        width: auto;
     }
-    
+
     #mostpopular {
-        display:grid;
-        grid-template-columns:repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: none;
         gap: 23px;
         max-width: 100%;
@@ -770,22 +735,20 @@ footer a {
         width: 100%;
         object-fit: cover;
     }
-    
 
     .mostpopular--title {
         padding-top: 12px;
         max-width: 150px;
-        
     }
-    .mostpopular--title h5{
-       font-size: 14px;
+    .mostpopular--title h5 {
+        font-size: 14px;
     }
 
     .mostpopular--price {
         padding-top: 7px;
     }
-    .mostpopular--price p{
-      font-size: 13px;  
+    .mostpopular--price p {
+        font-size: 13px;
     }
     .mostpopular--title-price-star {
         max-width: 150px;
@@ -798,9 +761,8 @@ footer a {
     /* ----------------------------------------- */
     /* -----------------ACTIVITE---------------- */
     /* ----------------------------------------- */
-    
+
     .activity__places {
-        
         height: 267px;
         max-width: 182px;
     }
@@ -808,8 +770,6 @@ footer a {
     .activity__picture {
         height: 100%;
         width: 100%;
-    
-        
     }
     .activity__picture img {
         max-height: 218px;
@@ -822,7 +782,7 @@ footer a {
     footer {
         max-width: 880px;
     }
-    #footer__nav{
+    #footer__nav {
         width: 80%;
     }
 }
@@ -849,8 +809,7 @@ footer a {
 
     #header__title1,
     #header__title2,
-    #header__filter,
-    #header__info {
+    #header__filter{
         padding: 20px;
     }
 
@@ -909,12 +868,11 @@ footer a {
 
     #header__title2 {
         padding: 20px 20px 0px 20px;
-       
     }
 
     /* ----------------------------------------- */
     /* ----------------------------------------- */
-    #header__search{
+    #header__search {
         padding: 20px 20px 36px 20px;
     }
     #search--search {
@@ -946,7 +904,6 @@ footer a {
         font-size: 11px;
         border-radius: 25px;
         max-width: 500px;
-        
     }
     #header__filter h4 {
         padding-bottom: 20px;
@@ -958,7 +915,7 @@ footer a {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 14px;
         grid-row-gap: 17px;
-        width: 100%;   
+        width: 100%;
     }
 
     .filter__choice i {
@@ -969,7 +926,7 @@ footer a {
     /* ----------------------------------------- */
 
     #header__info {
-        padding-top: 40px;
+        padding: 60px 20px 40px 20px;
     }
 
     /* ----------------------------------------- */
@@ -979,7 +936,6 @@ footer a {
     #harboring {
         flex-direction: column-reverse;
         max-height: 3950px;
-        width: 100%;
     }
 
     #harboring--title {
@@ -987,21 +943,17 @@ footer a {
     }
 
     #harboring__marseille {
-        
         max-height: 5000px;
         background-color: white;
-        padding-bottom: 73px;
-        padding-left: 0;
-        padding:26px 20px 70px 20px;
+        padding: 26px 20px 70px 20px;
     }
 
     #harboring__marseille__lodging {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-between;
-        gap:12px;
+        gap: 12px;
         height: auto;
-        
         width: 100%;
     }
 
@@ -1023,13 +975,12 @@ footer a {
     /* ----------------------------------------- */
 
     #harboring__mostpopular {
-        
         margin-top: 0;
         width: 100%;
         max-width: 762px;
         max-height: 700px;
         border-radius: 0px;
-        padding:26px 0px 50px 0px;
+        padding: 26px 0px 50px 0px;
     }
 
     #mostpopular {
@@ -1037,7 +988,6 @@ footer a {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         grid-row-gap: 33px;
-        
         margin-right: 0;
         max-width: 100%;
         max-height: 500px;
@@ -1049,15 +999,9 @@ footer a {
         padding: 00px 20px 20px 20px;
         max-width: 100%;
         margin-right: 0px;
-        
-    }
-
-    #mostpopular--icon {
-        align-self: flex-start;
     }
 
     .mostpopular__lodging {
-        
         width: 100%;
         max-width: 762px;
         margin-left: 0;
@@ -1074,7 +1018,6 @@ footer a {
 
     .mostpopular--title-price-star {
         max-width: 100%;
-        
     }
 
     .mostpopular--title {
@@ -1089,9 +1032,9 @@ footer a {
     #activity {
         display: flex;
         flex-direction: column;
-        
+
         padding: 0px 20px 0px 20px;
-        
+
         margin-top: 0px;
     }
 
@@ -1099,7 +1042,7 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        gap:25px;
+        gap: 25px;
     }
 
     .activity__places {
@@ -1113,7 +1056,6 @@ footer a {
     }
     .activity__places img {
         max-width: 800px;
-        
     }
 
     .activity__places--title {
@@ -1121,7 +1063,6 @@ footer a {
     }
 
     .activity__places--title h5 {
-        
         margin-left: 19px;
         margin-top: 15px;
     }
